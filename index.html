@@ -35,9 +35,6 @@
       #inputTxt {
         width: 180px;
       }
-      #hint {
-        margin-top: -10px;
-      }
     </style>
 
     <script>
@@ -74,7 +71,6 @@
         <input type="text" id="inputTxt" size="40" value="" onchange="getStreets(document.getElementById('inputTxt').value)"/>
         <input type="button" value="Search" id="findBtn" onclick="getStreets(document.getElementById('inputTxt').value)"/> 
       </div>
-      <br />
       <div id = "hint">Do not add Street Type (Suffix)</div>
       <div id="results"></div>
     </div>
