@@ -28,11 +28,14 @@
         color: rgb(199, 199, 199);
         font-style: italic;
       }
-      #inputTxt {
-        width: 170px;
-      }
+      /* #inputTxt {
+        width: 180px;
+      } */
       .lookup {
         margin-left: 5px;
+      }
+      .search {
+        width: 100%;
       }
     </style>
 
@@ -65,9 +68,11 @@
   </head>
   <body>
     <div class="lookup">
-      Street Name:
-      <input type="text" id="inputTxt" size="40" value="" onchange="getStreets(document.getElementById('inputTxt').value)"/>
-      <input type="button" value="Search" id="findBtn" onclick="getStreets(document.getElementById('inputTxt').value)"/>
+      <div class="search">
+        Street Name:
+        <input type="text" id="inputTxt" size="40" value="" onchange="getStreets(document.getElementById('inputTxt').value)"/>
+        <input type="button" value="Search" id="findBtn" onclick="getStreets(document.getElementById('inputTxt').value)"/> 
+      </div>
       <br />
       <div id = "hint">Do not add Street Type (Suffix)</div>
       <div id="results"></div>
